@@ -1,0 +1,53 @@
+Coffee Vending Machine
+
+Behavioural Pattern
+
+1. State pattern
+states
+The State Pattern is useful in modeling the coffee vending machine's behavior, where the machine operates in different states.
+The states could include: idle,brewing coffee, dispensing the coffee
+
+
+
+
+2. Factory Method Pattern
+types
+The Factory Method Pattern can be used to create different types of coffee based on the user's selection (e.g., espresso, cappuccino).
+The factory method can instantiate different types of drinks without exposing the instantiation logic to the client.
+
+3. Observer Pattern
+notif
+The Observer Pattern is ideal for handling notifications, such as when the machine is low on ingredients (e.g., coffee beans, milk). 
+Observers (such as an alert system or maintenance team) can subscribe to changes in the machine's status and be notified when maintenance is needed.
+
+4. Command Pattern
+The Command Pattern allows you to encapsulate requests (e.g., selecting coffee, inserting coins, brewing coffee) as objects.
+This can be useful when the coffee vending machine needs to queue commands or undo certain actions (like canceling a selection).
+
+Modules
+
+State pattern
+	
+CoffeeVending Machine
+State Interface
+Concrete States(idle,brewing,dispensing)
+
+Factory method
+
+Coffee Factory
+Coffee Interface
+Concrete Coffee Types
+
+
+Observer Pattern
+
+Subject
+Observer Interface
+Concerete Interface
+
+Command Pattern
+
+Command Interface
+Concrete Command Classes
+Invoker(CoffeeVendingMachine)
+
