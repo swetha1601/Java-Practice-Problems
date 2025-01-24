@@ -24,6 +24,9 @@ Observers (such as an alert system or maintenance team) can subscribe to changes
 The Command Pattern allows you to encapsulate requests (e.g., selecting coffee, inserting coins, brewing coffee) as objects.
 This can be useful when the coffee vending machine needs to queue commands or undo certain actions (like canceling a selection).
 
+5. Qr code pattern
+
+
 Modules
 
 State pattern
