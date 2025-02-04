@@ -1,0 +1,71 @@
+Use Cases for Vehicle Rental System:
+
+1. Admin Level Use Cases
+
+   Use Case 1: Manage Vehicle Inventory
+   - Actor: Admin
+   - Description: The admin adds, updates, or removes vehicles from the system’s inventory.
+   - Basic Flow:
+     1. Admin navigates to the vehicle management section.
+     2. Admin chooses to add, edit, or delete a vehicle.
+     3. Admin enters or updates details such as vehicle type, availability, location, and pricing.
+     4. System updates the vehicle inventory.
+
+   Use Case 2: View Rental History
+   - Actor: Admin
+   - Description: The admin views the rental history for users and vehicles.
+   - Basic Flow:
+     1. Admin selects the rental history option.
+     2. Admin can filter by user, date, vehicle, or location.
+     3. System displays rental history.
+
+   Use Case 3: Manage User Accounts
+   - Actor: Admin
+   - Description: Admin can add, update, or delete user accounts.
+   - Basic Flow:
+     1. Admin navigates to the user management section.
+     2. Admin selects a user and either updates their details or deletes the account.
+     3. Admin can also assign or modify user roles.
+
+2. Customer Level Use Cases
+
+   Use Case 1: Browse Vehicle Options
+   - Actor: Customer
+   - Description: Customers browse available vehicles for rental, considering location and other parameters.
+   - Basic Flow:
+     1. Customer enters desired location, rental dates, and vehicle preferences (type, size, etc.).
+     2. Customer reviews vehicle details, including features, pricing, and location availability.
+     3. System shows only available vehicles for the selected location and dates.
+
+   Use Case 2: Rent a Vehicle
+   - Actor: Customer
+   - Description: The customer rents a vehicle based on the location and other preferences.
+   - Basic Flow:
+     1. Customer selects a vehicle from available options in their chosen location.
+     2. Customer specifies the rental duration (start and end dates).
+     3. Customer enters payment information.
+     4. Customer confirms the rental.
+     5. System generates a booking confirmation, updates vehicle availability in that location, and sends details to the customer.
+
+   Use Case 3: View Rental History
+   - Actor: Customer
+   - Description: The customer views their past rental history, including locations of previous rentals.
+   - Basic Flow:
+     1. Customer navigates to rental history.
+     2. System displays a list of all previous rentals, including vehicle details, rental duration, pricing, and location.
+
+   Use Case 4: Make a Payment for Vehicle Rental
+   - Actor: Customer
+   - Description: The customer makes a payment for renting a vehicle.
+   - Basic Flow:
+     1. Customer selects a vehicle and specifies the rental duration (start and end dates).
+     2. System calculates the total rental cost based on the vehicle selected, rental duration, location, and any additional services (like insurance, GPS, etc.).
+     3. Customer is presented with payment options (e.g., credit card, debit card, PayPal, etc.).
+     4. Customer selects a preferred payment method.
+     5. Customer enters payment details (e.g., card number, expiration date, CVV).
+     6. System processes the payment through the selected payment gateway.
+     7. If the payment is successful:
+        - System confirms the booking and generates an invoice.
+        - Customer receives a confirmation email with rental details and the pick-up location.
+     8. If the payment fails:
+        - Customer is notified of the failure and prompted to retry or choose a different payment method.
